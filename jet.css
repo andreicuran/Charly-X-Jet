@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f0f5ef;
+    color: #222;
+}
+
+
+header {
+    background: #174b32;
+    color: white;
+    text-align: center;
+    padding: 30px 15px;
+}
+
+header h1 {
+    font-size: 30px;
+    letter-spacing: 3px;
+}
+
+header p {
+    margin-top: 8px;
+    color: #b8e2c5;
+    font-size: 13px;
+    letter-spacing: 2px;
+}
+
+
+.profile-container {
+    max-width: 950px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+
+.profile-card {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    background: white;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+
+.profile-image {
+    background-image: url("Messenger_creation_489D066B-3096-4600-A422-BF3FCE99353C.jpeg");
+    width: 100%;
+    height: 607px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.profile-info {
+    padding: 40px;
+}
+
+.tag {
+    display: inline-block;
+    background: #dff2e4;
+    color: #237347;
+    padding: 9px 15px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.profile-info h2 {
+    font-size: 32px;
+    color: #174b32;
+    margin: 20px 0;
+}
+
+
+.info-list {
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 15px 0;
+}
+
+.info-list p {
+    margin: 16px 0;
+    font-size: 14px;
+    color: #555;
+}
+
+.info-list strong {
+    color: #174b32;
+}
+
+
+.description {
+    color: #666;
+    line-height: 1.8;
+    font-size: 14px;
+    margin: 22px 0;
+}
+
+
+.back-btn {
+    display: inline-block;
+    text-decoration: none;
+    background: #174b32;
+    color: white;
+    padding: 13px 22px;
+    border-radius: 8px;
+    font-size: 13px;
+    transition: 0.3s;
+}
+
+.back-btn:hover {
+    background: #e58b36;
+    transform: translateY(-3px);
+}
+
+
+@media (max-width: 650px) {
+    
+    .profile-card {
+        grid-template-columns: 1fr;
+    }
+    
+    .profile-image {
+        min-height: 400px;
+    }
+    
+    .profile-info {
+        padding: 25px;
+    }
+    
+    .profile-info h2 {
+        font-size: 26px;
+    }
+}
